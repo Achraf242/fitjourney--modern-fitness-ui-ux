@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Dumbbell, Utensils, Users } from "lucide-react";
+import { Home, Dumbbell, Utensils, Users, User } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface BottomNavProps {
@@ -13,6 +13,7 @@ const navItems = [
   { id: "workout", icon: Dumbbell, label: "Workout" },
   { id: "nutrition", icon: Utensils, label: "Nutrition" },
   { id: "community", icon: Users, label: "Community" },
+  { id: "profile", icon: User, label: "Profile" },
 ];
 
 export function BottomNav({ activeTab, onTabChange }: BottomNavProps) {
