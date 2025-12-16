@@ -76,6 +76,7 @@ export default function Home() {
             </motion.button>
             <motion.button
               whileTap={{ scale: 0.95 }}
+              onClick={() => setActiveTab("profile")}
               className="p-2 rounded-full hover:bg-muted transition-colors"
             >
               <Settings className="h-5 w-5 text-muted-foreground" />
